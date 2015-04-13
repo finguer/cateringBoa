@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.disydes.cateringboa.VerVuelo"
+    android:background="@drawable/fondo_menu">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:nestedScrollingEnabled="false">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pedido"
+            android:id="@+id/bt_solicitar_catering"
+            android:drawableLeft="@drawable/notepad19"
+            android:layout_gravity="center_horizontal"
+            android:background="#fff"
+            android:layout_marginBottom="10dp"
+            android:onClick="pedir" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aprobacion"
+            android:drawableLeft="@drawable/email126"
+            android:id="@+id/btn_solicitar_visto_bueno"
+            android:layout_gravity="center_horizontal"
+            android:background="#fff"
+            android:layout_marginBottom="10dp"
+            android:onClick="enviarCorreo" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ver"
+            android:id="@+id/btn_ver_detalle"
+            android:layout_gravity="center_horizontal"
+            android:background="#fff"
+            android:layout_marginBottom="10dp"
+            android:onClick="ver" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/NUMERO_VUELO"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:textSize="40dp" />
+</RelativeLayout>
